@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Align items vertically */
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px; /* Add padding to give space around the content */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+    position: relative; /* Set body to relative positioning for absolute positioning inside */
+}
+
+.header {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: flex-start; /* Align items at the top */
+    width: 100%; /* Full width of the viewport */
+    padding: 20px; /* Padding around header */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+    position: absolute; /* Position header absolutely */
+    top: 10px; /* 20px from the top */
+}
+
+.header-content {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space items apart horizontally */
+    width: 100%; /* Full width of the header content */
+    max-width: 1200px; /* Limit maximum width */
+}
+
+.title-container {
+    text-align: left; /* Align text to the left */
+}
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it's above other content */
+    visibility: hidden; /* Initially hidden */
+}
+
+.progress {
+    width: 50px; /* Adjust width of progress indicator */
+    height: 50px; /* Height of progress indicator */
+    border: 3px solid #ffffff; /* White border */
+    border-radius: 50%; /* Circle shape */
+    border-top-color: transparent; /* Transparent top border */
+    animation: spin 1s linear infinite; /* Rotation animation */
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg); /* Rotate 360 degrees */
+    }
+}
+.app-title {
+    font-size: 2.5rem; /* Adjust size as needed */
+    font-weight: 400; /* Regular weight */
+    margin: 0;
+}
+
+.app-subtitle {
+    font-size: 1.2rem; /* Adjust size as needed */
+    font-weight: 300; /* Light weight */
+    margin: 0;
+    color: #cccccc; /* Lighter text color */
+}
+
+.header-image {
+    width: 150px; /* Set image width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+#news-container {
+    margin-top: 150px; /* Adjust margin to create space below the fixed header */
+}
+
+.news-card {
+    border: 1px solid #444; /* Darker border */
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    max-width: 650px;
+    background-color: #1e1e1e; /* Darker background for card */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+.news-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.news-card h3 {
+    margin: 10px 0;
+    color: #ffffff; /* Light text for headings */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400; /* Regular weight */
+    line-height: 1.5; /* Line spacing */
+}
+
+.news-card p {
+    margin: 5px 0;
+    color: #cccccc; /* Slightly lighter text for paragraphs */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300; /* Light weight */
+    line-height: 1.6; /* Line spacing */
+}
