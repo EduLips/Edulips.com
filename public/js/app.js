@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Show progress bar while loading
     progressBar.style.visibility = 'visible';
 
-    fetch('https://edulips-com.vercel.app/news')
+    fetch('/news')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
