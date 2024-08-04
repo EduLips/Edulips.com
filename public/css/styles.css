@@ -88,14 +88,13 @@ body {
     flex-direction: column; /* Stack cards vertically */
     align-items: center; /* Center cards horizontally */
     margin-top: 150px; /* Adjust margin for fixed header */
-    padding: 10px;
 }
 
 .news-card {
     width: 100%; /* Full width of the container */
     max-width: 650px; /* Limit maximum width */
     margin: 10px; /* Margin around cards */
-    padding: 15px;
+    padding: 5%;
     background-color: #1e1e1e; /* Darker background for card */
     border: 1px solid #444; /* Darker border */
     border-radius: 5px;
@@ -114,7 +113,7 @@ body {
     margin: 10px 0;
     color: #ffffff; /* Light text for headings */
     font-family: 'Poppins', sans-serif;
-    font-weight: 400; /* Regular weight */
+    font-weight: 500; /* Regular weight */
     line-height: 1.5; /* Line spacing */
 }
 
