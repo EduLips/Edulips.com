@@ -89,6 +89,7 @@ body {
     align-items: center;
     margin-top: 150px;
     padding: 0 10px; /* Add padding to handle small screen widths */
+    box-sizing: border-box; /* Ensure padding is included in width calculations */
 }
 
 .news-card {
@@ -126,4 +127,40 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 300; /* Light weight */
     line-height: 1.6; /* Line spacing */
+}
+@media (max-width: 480px) {
+    #news-container {
+        padding: 0 20px; /* Increase padding for small screens */
+    }
+
+    .news-card {
+        margin: 5px; /* Further adjust margin for very small screens */
+        padding: 10px; /* Further adjust padding */
+    }
+
+    .app-title {
+        font-size: 1.5rem; /* Further reduce title font size */
+    }
+
+    .app-subtitle {
+        font-size: 0.9rem; /* Further reduce subtitle font size */
+    }
+}
+@media (max-width: 768px) {
+    #news-container {
+        padding: 0 15px; /* Increase padding for medium screens */
+    }
+
+    .news-card {
+        margin: 5px; /* Reduce margin on smaller screens */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .app-title {
+        font-size: 2rem; /* Smaller title font size */
+    }
+
+    .app-subtitle {
+        font-size: 1rem; /* Smaller subtitle font size */
+    }
 }
