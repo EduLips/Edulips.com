@@ -85,27 +85,24 @@ body {
 
 #news-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 150px;
-    padding: 0 10px; /* Add padding to handle small screen widths */
-    box-sizing: border-box; /* Ensure padding is included in width calculations */
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center cards horizontally */
+    margin-top: 150px; /* Adjust margin for fixed header */
+    padding: 10px;
 }
 
 .news-card {
-    width: 100%;
+    width: 100%; /* Full width of the container */
     max-width: 650px; /* Limit maximum width */
-    margin: 10px;
+    margin: 10px; /* Margin around cards */
     padding: 15px;
-    background-color: #1e1e1e;
-    border: 1px solid #444;
+    background-color: #1e1e1e; /* Darker background for card */
+    border: 1px solid #444; /* Darker border */
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow */
     display: flex;
-    flex-direction: column;
-    box-sizing: border-box; /* Ensure padding and border are included in total width */
+    flex-direction: column; /* Stack content vertically */
 }
-
 
 .news-card img {
     max-width: 100%;
@@ -127,40 +124,4 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 300; /* Light weight */
     line-height: 1.6; /* Line spacing */
-}
-@media (max-width: 480px) {
-    #news-container {
-        padding: 0 20px; /* Increase padding for small screens */
-    }
-
-    .news-card {
-        margin: 5px; /* Further adjust margin for very small screens */
-        padding: 10px; /* Further adjust padding */
-    }
-
-    .app-title {
-        font-size: 1.5rem; /* Further reduce title font size */
-    }
-
-    .app-subtitle {
-        font-size: 0.9rem; /* Further reduce subtitle font size */
-    }
-}
-@media (max-width: 768px) {
-    #news-container {
-        padding: 0 15px; /* Increase padding for medium screens */
-    }
-
-    .news-card {
-        margin: 5px; /* Reduce margin on smaller screens */
-        padding: 10px; /* Adjust padding */
-    }
-
-    .app-title {
-        font-size: 2rem; /* Smaller title font size */
-    }
-
-    .app-subtitle {
-        font-size: 1rem; /* Smaller subtitle font size */
-    }
 }
