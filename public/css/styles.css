@@ -69,6 +69,7 @@ body {
         transform: rotate(360deg); /* Rotate 360 degrees */
     }
 }
+
 .app-title {
     font-size: 2rem; /* Adjust size as needed */
     font-weight: 400; /* Regular weight */
@@ -93,6 +94,8 @@ body {
     align-items: center; /* Center cards horizontally */
     margin-top: 70px; /* Adjust margin for fixed header */
     width: 100%; /* Full width to handle content */
+    max-width: 1000px; /* Limit maximum width to ensure centering */
+    padding: 10px; /* Add padding inside the container */
     box-sizing: border-box; /* Include padding in element's total width and height */
 }
 
