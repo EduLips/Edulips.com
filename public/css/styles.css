@@ -10,20 +10,22 @@ body {
     flex-direction: column; /* Align items vertically */
     min-height: 100vh;
     margin: 0;
-    padding: 20px; /* Add padding to give space around the content */
+    padding: 10px; /* Reduced padding */
     box-sizing: border-box; /* Include padding in element's total width and height */
-    position: relative; /* Set body to relative positioning for absolute positioning inside */
 }
 
 .header {
     display: flex;
     justify-content: center; /* Center items horizontally */
-    align-items: flex-start; /* Align items at the top */
+    align-items: center; /* Center items vertically */
     width: 100%; /* Full width of the viewport */
-    padding: 20px; /* Padding around header */
+    padding: 10px; /* Reduced padding */
     box-sizing: border-box; /* Include padding in element's total width and height */
-    position: absolute; /* Position header absolutely */
-    top: 10px; /* 20px from the top */
+    position: fixed; /* Fix header position */
+    top: 0; /* Align with the top */
+    left: 0; /* Align with the left */
+    background-color: #121212; /* Ensure background color to avoid visual gaps */
+    z-index: 1000; /* Ensure header is above other content */
 }
 
 .header-content {
@@ -32,11 +34,13 @@ body {
     justify-content: space-between; /* Space items apart horizontally */
     width: 100%; /* Full width of the header content */
     max-width: 1200px; /* Limit maximum width */
+    box-sizing: border-box; /* Include padding in element's total width and height */
 }
 
 .title-container {
     text-align: left; /* Align text to the left */
 }
+
 .progress-bar {
     position: fixed;
     top: 0;
@@ -66,20 +70,20 @@ body {
     }
 }
 .app-title {
-    font-size: 2.5rem; /* Adjust size as needed */
+    font-size: 2rem; /* Adjust size as needed */
     font-weight: 400; /* Regular weight */
     margin: 0;
 }
 
 .app-subtitle {
-    font-size: 1.2rem; /* Adjust size as needed */
+    font-size: 1rem; /* Adjust size as needed */
     font-weight: 300; /* Light weight */
     margin: 0;
     color: #cccccc; /* Lighter text color */
 }
 
 .header-image {
-    width: 150px; /* Set image width */
+    width: 120px; /* Adjust image width */
     height: auto; /* Maintain aspect ratio */
 }
 
@@ -87,20 +91,23 @@ body {
     display: flex;
     flex-direction: column; /* Stack cards vertically */
     align-items: center; /* Center cards horizontally */
-    margin-top: 150px; /* Adjust margin for fixed header */
+    margin-top: 70px; /* Adjust margin for fixed header */
+    width: 100%; /* Full width to handle content */
+    box-sizing: border-box; /* Include padding in element's total width and height */
 }
 
 .news-card {
     width: 100%; /* Full width of the container */
     max-width: 650px; /* Limit maximum width */
     margin: 10px; /* Margin around cards */
-    padding: 5%;
+    padding: 15px; /* Adjust padding */
     background-color: #1e1e1e; /* Darker background for card */
     border: 1px solid #444; /* Darker border */
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow */
     display: flex;
     flex-direction: column; /* Stack content vertically */
+    box-sizing: border-box; /* Ensure padding and border are included in total width */
 }
 
 .news-card img {
