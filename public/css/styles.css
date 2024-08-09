@@ -134,3 +134,14 @@ body {
     font-weight: 300; /* Light weight */
     line-height: 1.6; /* Line spacing */
 }
+.float{
+	position:fixed;
+	width: 150px;
+	height:150px;
+	bottom:20px;
+	right:80px;
+}
+
+.my-float{
+	margin-top:22px;
+}
