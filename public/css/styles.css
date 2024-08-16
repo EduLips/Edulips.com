@@ -135,11 +135,15 @@ body {
     line-height: 1.6; /* Line spacing */
 }
 .float{
-	position:fixed;
-	width: 150px;
-	height:150px;
-	bottom:20px;
-	right:60px;
+    position: fixed;
+    width: 150px;
+    height: 150px;
+    bottom: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
 }
 
 .my-float{
